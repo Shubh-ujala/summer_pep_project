@@ -11,6 +11,18 @@ Currently, two official plugins are available:
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Vercel deployment
+
+Use this as a Vercel project with:
+
+- Root directory: `Frontend`
+- Build command: `npm run build`
+- Output directory: `dist`
+- Environment variable:
+	- `VITE_API_BASE_URL` = your Render backend URL, for example `https://studystack-4nix.onrender.com`
+
+The included `vercel.json` keeps React Router refreshes working on deployed routes.
+
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.

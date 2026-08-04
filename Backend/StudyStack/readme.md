@@ -9,6 +9,18 @@ Structured Express + MongoDB backend with:
 ## Deployed on render - 
 - https://studystack-4nix.onrender.com
 
+## Render deployment
+
+Use this as a Render web service with:
+
+- Root directory: `Backend/StudyStack`
+- Build command: `npm install`
+- Start command: `npm start`
+- Environment variables:
+   - `DATABASE` = your MongoDB connection string
+   - `JWT_SECRET` = your JWT secret
+   - `FRONTEND_URL` = your Vercel production URL, for example `https://your-app.vercel.app`
+
 ## Project Structure
 
 ```
